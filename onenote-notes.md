@@ -8,20 +8,19 @@ Without that it's extremely easy to misuse SDREST and end up in a spot when evol
 
 Also, the [HAL format](https://stateless.co/hal_specification.html) used in SDREST is something your consumers will have to adapt to, which might incur friction.
 
-
-    1. Intro: what is SDREST 
-        a. Define @Repository
-        b. SDREST autogenerates API for them
-    2. Body: pitfalls
-        a. For all of those: usually come from misusing SDREST, aka "skill issue"
-        b. !! how to add business validations to incoming mutation requests?
-            i. especially against related data
-    3. Outro: 
-        a. Is SDREST objectively bad?
-            i. No
-        b. Can you create a clean maintainable service with it? 
-            i. Yes
-        c. Is the effort to create such a service with SDREST worth it? 
-            i. IMO -- no
-            ii. Considering the amount of intricate library-specific knowledge you must have to do it
-        
+1. Intro: what is SDREST 
+    a. Define @Repository
+    b. SDREST autogenerates API for them
+2. Body: pitfalls
+    a. For all of those: usually come from misusing SDREST, aka "skill issue"
+    b. !! how to add business validations to incoming mutation requests?
+        i. especially against related data
+3. Outro: 
+    a. Is SDREST objectively bad?
+        i. No
+    b. Can you create a clean maintainable service with it? 
+        i. Yes
+    c. Is the effort to create such a service with SDREST worth it? 
+        i. IMO -- no
+        ii. Considering the amount of intricate library-specific knowledge you must have to do it
+    
