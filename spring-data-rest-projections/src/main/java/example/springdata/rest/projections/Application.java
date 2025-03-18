@@ -19,11 +19,14 @@ import example.springdata.rest.projections.Customer.Gender;
 
 import java.math.BigDecimal;
 
+import io.swagger.v3.oas.models.*;
+import io.swagger.v3.oas.models.info.Info;
 import jakarta.annotation.PostConstruct;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 
 /**
  * @author Oliver Gierke
@@ -46,8 +49,20 @@ public class Application {
 		var order = new Order();
 
 		order.setCustomer(dave);
-		order.add(new LineItem("Lakewood guitar", new BigDecimal(1299.0)));
+		order.add(new LineItem("Lakewood guitar", new BigDecimal("1299.0")));
 
 		orders.save(order);
+	}
+
+	@Bean
+	public OpenAPI serviceApi() {
+		return new OpenAPI().info(info());
+	}
+
+	public Info info() {
+		Info info = new Info();
+		info.setTitle("DEMO API");
+		info.setVersion("1.2.3");
+		return info;
 	}
 }
