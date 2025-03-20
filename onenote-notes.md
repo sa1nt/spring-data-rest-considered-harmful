@@ -24,3 +24,4 @@ Also, the [HAL format](https://stateless.co/hal_specification.html) used in SDRE
         * IMO -- no
         * Considering the amount of intricate library-specific knowledge you must have to do it
     
+Meme generation: https://imgflip.com/memegenerator/351767367/Running-Away-Balloon-2---boxes

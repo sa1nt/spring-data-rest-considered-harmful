@@ -11,7 +11,7 @@ The framework follows HATEOAS principle to provide resource discoverability. Spe
 
 ## TLDR
 
-![meme](meme-4.jpg)
+![meme](meme-5.jpg)
 
 ## Pros
 
